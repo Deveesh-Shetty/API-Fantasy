@@ -21,6 +21,7 @@
 }
 .dictionary-container > input[type=text] {
     font-size: 2em;
+    width: 80%;
 }
 .dictionary-container > input[type=text]::placeholder {
     font-size: 0.75em;

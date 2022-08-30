@@ -14,6 +14,8 @@ body {
 #root {
   display: grid;
   grid-template-columns: 15% 1fr;
+  min-width: fit-content;     /* Fixed the grid shrinking after one moment */
+  min-height: fit-content;
   min-height: 100vh;
 }
 

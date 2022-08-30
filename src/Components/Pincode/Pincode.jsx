@@ -10,6 +10,7 @@ function Pincode() {
   let cityDiv;
 
   function getCityPincode() {
+    result.current.textContent = "";
     const city = inputCity.current.value;
     fetch(`https://api.postalpincode.in/postoffice/${city}`)
       .then((response) => response.json())

@@ -29,7 +29,6 @@ aside > ul > li > a {
 @media (max-width: 50em) {
     aside {
         min-height: 5vh;
-        margin-bottom: 2%;
         font-size: 1em;
     }
     aside > ul {
@@ -37,5 +36,13 @@ aside > ul > li > a {
     }
     aside > ul > li:first-child {
         display: none;
+    }
+    aside {
+        width: 100%;
+    }
+}
+@media (max-width: 40em) {
+    aside {
+        font-size: 0.75em;
     }
 }

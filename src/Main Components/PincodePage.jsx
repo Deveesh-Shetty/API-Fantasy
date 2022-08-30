@@ -4,6 +4,7 @@ import Sidebar from "../Components/Sidebar/Sidebar";
 import Pincode from "../Components/Pincode/Pincode";
 
 function PincodePage() {
+  document.title = "API Forever - Pincode";
   return (
     <>
       <Navbar />

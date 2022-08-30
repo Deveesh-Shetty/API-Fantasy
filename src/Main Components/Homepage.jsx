@@ -4,7 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Content from "../Components/Content/Content";
 
 function Homepage() {
-  document.title = "API Fantasy";
+  document.title = "API Forever";
   return (
     <>
       <Navbar />

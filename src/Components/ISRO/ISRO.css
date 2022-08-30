@@ -110,3 +110,28 @@ main#isro-main > .isro-content{
     margin: 2% auto;
     
 }
+
+@media (max-width:50em) {
+.centres-parent,
+.launchers-parent,
+.space-crafts-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.centre-container {
+    width: 100%;
+}
+.launcher-name {
+    width: 45%;
+    margin: 0.5% auto;
+}
+.space-craft-name {
+    flex-basis: 45%;
+    outline: 1px solid var(--pop-color);
+}
+}
+@media (max-width: 35em) {
+    .space-craft-name {
+        flex-basis: 75%;
+    }
+}

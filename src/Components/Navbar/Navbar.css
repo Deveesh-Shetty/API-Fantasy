@@ -37,4 +37,8 @@ aside > ul > li:hover > a {
     nav > ul > li {
         font-size: 1em;
     }
+    .logo {
+        background-color: transparent;
+        align-self: center;
+    }
 }

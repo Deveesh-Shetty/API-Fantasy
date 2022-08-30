@@ -56,3 +56,13 @@
 .buttons > input[type=submit] {
     padding: 5%;
 }
+
+@media (max-width: 50em) {
+    .pincode-result {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pincode-result > div {
+        width: 100%;
+    }
+}

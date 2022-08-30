@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 
 function AboutPage() {
+  document.title = "API Forever - About";
   return (
     <>
       <Navbar />

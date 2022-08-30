@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Sidebar from "../Components/Sidebar/Sidebar";
 
 function ISROpage() {
+  document.title = "API Forever - ISRO";
   return (
     <>
       <Navbar />
