@@ -59,7 +59,7 @@ function About() {
             meaning and phonetics of it
           </p>
           <h3>API link:</h3>
-          <kbd>https://api.dictionaryapi.dev/api/v2/entries/en/</kbd>
+          <kbd>https://api.dictionaryapi.dev/ api/v2/entries/en/</kbd>
         </div>
         <div className="api-reference" id="dicitionary-quotes">
           <h2>Pincode API: </h2>

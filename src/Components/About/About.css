@@ -6,7 +6,6 @@
 #about > main {
     width: 75%;
     margin: auto;
-    display: flex;
     /* gap: 2%; */  /* Causing the sidebar not grow */
     flex-wrap: wrap;
     display: grid;
@@ -57,7 +56,9 @@
 @media (max-width: 50em) {
     #about > main {
         display: flex;
-        width: 100%;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: none;
     }
     .api-reference {
         width: 100%;

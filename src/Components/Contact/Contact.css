@@ -27,4 +27,10 @@
 #contact {
     width: 100%;
 }
+#contact > div > p {
+    font-size: 1em;
+}
+#contact > div > h2 {
+    font-size: 1.25em;
+}
 }

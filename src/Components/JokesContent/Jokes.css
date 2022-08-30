@@ -10,7 +10,7 @@
     font-size: 1.5em;
     color: var(--text-color);
     width: 75%;
-    height: 50%;
+    min-height: 50%;
     flex-direction: column;
 }
 .joke-delivery {
@@ -28,7 +28,7 @@ main#main-parent {
 }
 #random {
     all: unset;
-    margin-top: 5%;
+    margin-block: 5% 3%;
     background-color: var(--pop-color);
     padding: 1% 2%;
     border-radius: 100vw;
@@ -38,4 +38,18 @@ main#main-parent {
 #random:hover {
     color: var(--pop-color);
     background-color: var(--text-color);
+}
+
+@media (max-width: 50em) {
+    .main-content {
+        font-size: 1em;
+        width: 80%;
+    }
+    #main-parent {
+        width: 80%;
+        margin-inline: auto;
+    }
+    #random {
+        padding: 2% 4%;
+    }
 }

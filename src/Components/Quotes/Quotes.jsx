@@ -26,7 +26,7 @@ function Quote() {
     return Math.floor(Math.random() * number);
   }
   function randomFunFact() {
-    quoteContent.current.textContent = "...";
+    quoteContent.current.textContent = "Motivating you.... Please wait";
     quoteAuthor.current.textContent = "";
     setTimeout(() => {
       getQuotes();
@@ -36,9 +36,11 @@ function Quote() {
     <main id="main-parent">
       <div className="main-content">
         <header>
-          <h1 style={{ fontSize: "2.5em" }}>Quote:</h1>
+          <h1>Quote:</h1>
         </header>
-        <h2 className="quote" ref={quoteContent}></h2>
+        <h2 className="quote" ref={quoteContent}>
+          Motivating you.... Please wait
+        </h2>
         <h3 className="author" ref={quoteAuthor}></h3>
       </div>
       <button id="random" onClick={randomFunFact}>

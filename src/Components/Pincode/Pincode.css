@@ -12,6 +12,10 @@
 .pincode > input[type=text] {
     font-size: 1.5em;
     margin-top: 2%;
+    padding: 1%;
+}
+.pincode > input[type=text]::placeholder {
+    text-align: center;
 }
 .pincode > p:first-child {
     font-size: 2em;
@@ -64,5 +68,15 @@
     }
     .pincode-result > div {
         width: 100%;
+    }
+    #pincode-search > h1 {
+        font-size: 2em;
+    }
+    .pincode > p:first-child {
+        font-size: 1.5em;
+    }
+    .pincode > input[type=text] {
+        font-size: 1.25em;
+        margin-block: 2%;
     }
 }

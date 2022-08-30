@@ -34,7 +34,7 @@ function Jokes() {
   }
 
   function randomJokes() {
-    jokeSetup.current.textContent = "...";
+    jokeSetup.current.textContent = "Searching for a joke";
     jokeDelivery.current.textContent = "";
     setTimeout(() => {
       getJokes();
@@ -49,7 +49,9 @@ function Jokes() {
         <header>
           <h1>Joke:</h1>
         </header>
-        <h2 ref={jokeSetup} className="joke-setup"></h2>
+        <h2 ref={jokeSetup} className="joke-setup">
+          Searching for a joke
+        </h2>
         <h2 ref={jokeDelivery} className="joke-delivery"></h2>
       </div>
       <button id="random" onClick={randomJokes}>

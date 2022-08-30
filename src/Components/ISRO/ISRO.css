@@ -118,8 +118,15 @@ main#isro-main > .isro-content{
     display: flex;
     flex-wrap: wrap;
 }
+.launchers > h1,
+.space-crafts > h1,
+.centres > h1 {
+    font-size: 2em;
+    margin-block: 1%;
+}
 .centre-container {
     width: 100%;
+    margin-block: 1%;
 }
 .launcher-name {
     width: 45%;
@@ -129,9 +136,19 @@ main#isro-main > .isro-content{
     flex-basis: 45%;
     outline: 1px solid var(--pop-color);
 }
+main#isro-main > .isro-content{
+    font-size: 0.875em;
+}
+#isro-nav > ul {
+    gap: 2px;
+}
+#isro-nav {
+    margin-top: -2%;
+}
 }
 @media (max-width: 35em) {
     .space-craft-name {
         flex-basis: 75%;
     }
+
 }

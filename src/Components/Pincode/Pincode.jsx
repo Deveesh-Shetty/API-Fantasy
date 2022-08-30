@@ -44,7 +44,13 @@ function Pincode() {
       <h1>Pincode</h1>
       <div className="pincode">
         <p>Enter City Name</p>
-        <input type="text" name="city" id="city-search" ref={inputCity} />
+        <input
+          type="text"
+          name="city"
+          id="city-search"
+          ref={inputCity}
+          placeholder="City Name"
+        />
         <div className="buttons">
           <input type="submit" value="Search" onClick={getCityPincode} />
           <input type="submit" value="Reset" onClick={resetSearchResults} />
