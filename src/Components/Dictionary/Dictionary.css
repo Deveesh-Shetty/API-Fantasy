@@ -21,7 +21,7 @@
 }
 .dictionary-container > input[type=text] {
     font-size: 2em;
-    width: 80%;
+    width: 400px;
     padding: 1%;
 }
 .dictionary-container > input[type=text]::placeholder {
@@ -67,5 +67,6 @@ input[type=submit]:hover {
     .dictionary-container > input[type=text] {
         font-size: 1.5em;
         margin-block: 2%;
+        width: 80%;
     }
 }
