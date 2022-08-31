@@ -5,6 +5,7 @@ import "./Pincode.css";
 function Pincode() {
   const inputCity = useRef(null);
   const result = useRef(null);
+  const errorMessage = useRef(null);
 
   function getCityPincode() {
     result.current.textContent = "";
