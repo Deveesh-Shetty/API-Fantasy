@@ -5,9 +5,6 @@ import "./Pincode.css";
 function Pincode() {
   const inputCity = useRef(null);
   const result = useRef(null);
-  let cityNameH2;
-  let cityPincodeH2;
-  let cityDiv;
 
   function getCityPincode() {
     result.current.textContent = "";
@@ -16,9 +13,9 @@ function Pincode() {
       .then((response) => response.json())
       .then((cityData) => {
         cityData[0].PostOffice.forEach((city) => {
-          cityNameH2 = document.createElement("h2");
-          cityPincodeH2 = document.createElement("h2");
-          cityDiv = document.createElement("div");
+          const cityNameH2 = document.createElement("h2");
+          const cityPincodeH2 = document.createElement("h2");
+          const cityDiv = document.createElement("div");
 
           cityNameH2.innerHTML = `<span>${city.Name}</span>, ${city.Division}, ${city.District}, ${city.State}, ${city.Country}`;
           cityPincodeH2.textContent = city.Pincode;
@@ -35,10 +32,6 @@ function Pincode() {
       });
   }
 
-  function resetSearchResults() {
-    window.location.reload();
-  }
-
   return (
     <div id="pincode-search">
       <h1>Pincode</h1>
@@ -53,7 +46,6 @@ function Pincode() {
         />
         <div className="buttons">
           <input type="submit" value="Search" onClick={getCityPincode} />
-          <input type="submit" value="Reset" onClick={resetSearchResults} />
         </div>
         <div className="pincode-result" ref={result}>
           {/* <h2 className="city-name"></h2> */}
